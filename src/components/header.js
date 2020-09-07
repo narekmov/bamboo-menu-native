@@ -43,46 +43,42 @@ export const Header = ({title, back}) => {
             <Text style={styles.backButton}>‹</Text>
           </TouchableOpacity>
         )}
-        <Image
-          style={styles.image}
-          source={require('../../assets/images/bamboo_logo.png')}
-        />
       </View>
       <View style={styles.titleContent}>
         <Text style={styles.buttonText}>{title}</Text>
       </View>
       <View style={styles.rightContent}>
         {/*ՀԱՅ / РУС / ENG*/}
-        <TouchableOpacity onPress={() => setLan('hy')}>
+        <TouchableOpacity onPress={() => setLan('hy')} style={styles.lnButton}>
           <Text
             style={[
               styles.langText,
               styles.languageText,
               language === 'hy' && styles.active,
             ]}>
-            ՀԱՅ
+            {'ՀԱՅ'}
           </Text>
         </TouchableOpacity>
         <Text style={styles.langText}>/</Text>
-        <TouchableOpacity onPress={() => setLan('ru')}>
+        <TouchableOpacity onPress={() => setLan('ru')} style={styles.lnButton}>
           <Text
             style={[
               styles.langText,
               styles.languageText,
               language === 'ru' && styles.active,
             ]}>
-            РУС
+            {'РУС'}
           </Text>
         </TouchableOpacity>
         <Text style={styles.langText}>/</Text>
-        <TouchableOpacity onPress={() => setLan('en')}>
+        <TouchableOpacity onPress={() => setLan('en')} style={styles.lnButton}>
           <Text
             style={[
               styles.langText,
               styles.languageText,
               language === 'en' && styles.active,
             ]}>
-            ENG
+            {'ENG'}
           </Text>
         </TouchableOpacity>
       </View>
@@ -123,7 +119,6 @@ const styles = StyleSheet.create({
   langText: {
     fontSize: 14,
     color: WHITE,
-    marginHorizontal: 1,
   },
   rightContent: {
     flexDirection: 'row',
@@ -134,16 +129,20 @@ const styles = StyleSheet.create({
   active: {
     fontWeight: 'bold',
   },
-  languageText: {
-    width: 30,
-  },
+  languageText: {},
   backButtonWrapper: {
     height: 50,
-    width: 30,
+    width: 100,
+    borderColor: 'white',
   },
   backButton: {
     fontSize: 50,
     color: 'green',
     lineHeight: 50,
+  },
+  lnButton: {
+    paddingHorizontal: 5,
+    paddingVertical: 5,
+    marginVertical: -5,
   },
 });

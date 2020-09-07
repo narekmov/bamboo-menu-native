@@ -40,11 +40,12 @@ export const OrderModal = ({isVisible, close, data}) => {
       animationType="fade"
       transparent={true}
       visible={isVisible}
+      style={styles.modal}
       onRequestClose={() => {
         // Alert.alert('Modal has been closed.');
       }}>
       {!!data && (
-        <View style={[styles.wrapper]}>
+        <View style={styles.wrapper}>
           <View style={styles.container}>
             <View style={styles.imageWrapper}>
               <Image
@@ -60,7 +61,7 @@ export const OrderModal = ({isVisible, close, data}) => {
                   </Text>
                   <Text style={styles.topContentWeightText}>{data.weight}</Text>
                 </View>
-                <TouchableOpacity onPress={close}>
+                <TouchableOpacity onPress={close} style={styles.closeIcon}>
                   <Image source={x_icon} style={styles.xIcon} />
                 </TouchableOpacity>
               </View>
@@ -75,17 +76,19 @@ export const OrderModal = ({isVisible, close, data}) => {
                   <Text>Quantity</Text>
                   <View style={styles.bottomContentQuantity}>
                     <TouchableOpacity
+                      style={styles.quantityButton}
                       onPress={() => {
                         quantity > 1 && setQuantity(quantity - 1);
                       }}>
-                      <Text>-</Text>
+                      <Text style={styles.quantityButtonText}>-</Text>
                     </TouchableOpacity>
-                    <Text>{quantity}</Text>
+                    <Text style={styles.quantityButtonText}>{quantity}</Text>
                     <TouchableOpacity
+                      style={styles.quantityButton}
                       onPress={() => {
                         setQuantity(quantity + 1);
                       }}>
-                      <Text>+</Text>
+                      <Text style={styles.quantityButtonText}>+</Text>
                     </TouchableOpacity>
                   </View>
                 </View>
@@ -118,20 +121,27 @@ export const OrderModal = ({isVisible, close, data}) => {
 };
 
 const styles = StyleSheet.create({
+  modal: {
+    margin: 0,
+  },
   wrapper: {
     width: '100%',
     height: '100%',
     backgroundColor: '#00000080',
     justifyContent: 'center',
     alignItems: 'center',
+    paddingHorizontal: 50,
+    paddingVertical: 50,
   },
   imageWrapper: {
     width: '30%',
     height: '100%',
   },
   container: {
-    width: '68.5%',
-    height: '41.5%',
+    width: '100%',
+    height: '100%',
+    maxWidth: 850,
+    maxHeight: 350,
     backgroundColor: '#ffffff',
     borderRadius: 20,
     overflow: 'hidden',
@@ -233,5 +243,17 @@ const styles = StyleSheet.create({
   xIcon: {
     width: 24,
     height: 24,
+  },
+  closeIcon: {
+    padding: 10,
+    margin: -10,
+  },
+  quantityButton: {
+    padding: 5,
+    margin: -5,
+  },
+  quantityButtonText: {
+    fontSize: 16,
+    lineHeight: 23,
   },
 });

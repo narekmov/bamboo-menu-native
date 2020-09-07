@@ -1,33 +1,41 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-import { WHITE } from '../utils/colors';
+import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
+import {WHITE} from '../utils/colors';
 
-export const Sales = ({ slide, language, onPress }) => {
+export const Sales = ({slide, language, onPress}) => {
   return (
     <TouchableOpacity style={styles.wrapper} onPress={onPress}>
       <View style={styles.container}>
-        <Text style={[styles.title, styles.textWhite]}>{slide.product.name[language]}</Text>
+        <Text style={[styles.title, styles.textWhite]}>
+          {slide.product.name[language]}
+        </Text>
         <View style={styles.containerPrices}>
-          <Text style={[styles.textWhite, styles.price]}>{slide.product.discount}</Text>
-          <Text style={[styles.textGray, styles.currency]}>AMD</Text>
+          <Text style={[styles.textWhite, styles.price]}>
+            {slide.product.discount}
+            <Text style={[styles.textGray, styles.currency]}>AMD</Text>
+          </Text>
         </View>
       </View>
-      <View style={[styles.container, { justifyContent: 'space-between' }]}>
+      <View style={[styles.container, {justifyContent: 'space-between'}]}>
         <View style={styles.containerSave}>
           <Text style={[styles.textGray, styles.saveText]}>Save</Text>
-          <Text style={[styles.textWhite, styles.savedPrice]}>{slide.product.price - slide.product.discount}</Text>
-          <Text style={[styles.textGray, styles.currency]}>AMD</Text>
+          <Text style={[styles.textWhite, styles.savedPrice]}>
+            {slide.product.price - slide.product.discount}
+            <Text style={[styles.textGray, styles.currency]}>AMD</Text>
+          </Text>
         </View>
         <View style={styles.containerSavedPrice}>
           <View style={styles.containerPrices}>
             <View style={styles.line} />
-            <Text style={[styles.textGray, styles.previousPrice]}>{slide.product.price}</Text>
+            <Text style={[styles.textGray, styles.previousPrice]}>
+              {slide.product.price}
+            </Text>
             <Text style={[styles.textGray, styles.currency]}>AMD</Text>
           </View>
         </View>
       </View>
     </TouchableOpacity>
-  )
+  );
 };
 
 const styles = StyleSheet.create({
@@ -44,7 +52,7 @@ const styles = StyleSheet.create({
     color: WHITE,
   },
   textGray: {
-    color: '#ABABAB'
+    color: '#ABABAB',
   },
   title: {
     fontSize: 24,
@@ -61,7 +69,7 @@ const styles = StyleSheet.create({
   },
   currency: {
     fontSize: 12,
-    fontWeight: '500'
+    fontWeight: '500',
   },
   containerSave: {
     flexDirection: 'row',
@@ -76,7 +84,7 @@ const styles = StyleSheet.create({
   savedPrice: {
     fontSize: 18,
     fontWeight: '800',
-    paddingHorizontal: 4
+    paddingHorizontal: 4,
   },
   previousPrice: {
     fontSize: 20,
@@ -85,7 +93,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     width: '100%',
     height: 1,
-    backgroundColor: WHITE,
-    top: 15
-  }
+    backgroundColor: '#ABABAB',
+    top: 15,
+  },
 });

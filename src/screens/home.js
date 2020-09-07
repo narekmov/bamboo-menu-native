@@ -113,7 +113,7 @@ const styles = StyleSheet.create({
     color: WHITE,
     fontSize: 40,
     position: 'absolute',
-    top: 74,
+    top: 28,
     fontFamily: OPENSANCE_BOLD,
     backgroundColor: 'transparent',
     textAlign: 'center',
