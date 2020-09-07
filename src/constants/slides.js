@@ -1,0 +1,2 @@
+export const GET_SLIDES = 'GET_SLIDES';
+export const OPEN_SLIDE_PRODUCT = 'OPEN_SLIDE_PRODUCT';
