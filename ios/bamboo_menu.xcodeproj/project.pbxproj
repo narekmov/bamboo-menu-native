@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* bamboo_menuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* bamboo_menuTests.m */; };
+		01298373C645481BB3E4E968 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D93BEE31B9C1489B95E9D51F /* OpenSans-Bold.ttf */; };
+		0444270BD4924637AA122A7B /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49012705CDA742C9B19067AC /* Montserrat-Regular.ttf */; };
+		102F643E746009F888D14263 /* libPods-bamboo_menu-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C06675F133442FD8024127E /* libPods-bamboo_menu-tvOS.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -15,7 +18,12 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* bamboo_menuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* bamboo_menuTests.m */; };
+		32E05DE7BC5F7FD2CAFFE80F /* libPods-bamboo_menu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AFBBA41B6856DC259E86070 /* libPods-bamboo_menu.a */; };
+		4F8804EB48374DB7BF1E692E /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 154C48AB7AB54A9090C26988 /* Montserrat-Bold.ttf */; };
+		69212D93DC5391A86F708442 /* libPods-bamboo_menu-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B66A95D7051D34C4D77D9C /* libPods-bamboo_menu-tvOSTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		9D3B5B8EDA6147FFA980DBDE /* SFUIText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B380FE178FB441DB09A3CF1 /* SFUIText-Medium.ttf */; };
+		E111DF3BA57CC960C37A43BC /* libPods-bamboo_menu-bamboo_menuTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B2951F1D7857254A8EFDB3E /* libPods-bamboo_menu-bamboo_menuTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,15 +48,31 @@
 		00E356EE1AD99517003FC87E /* bamboo_menuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bamboo_menuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* bamboo_menuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bamboo_menuTests.m; sourceTree = "<group>"; };
+		0A093472C22E191F7833EBC1 /* Pods-bamboo_menu-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bamboo_menu-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-bamboo_menu-tvOSTests/Pods-bamboo_menu-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* bamboo_menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bamboo_menu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = bamboo_menu/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = bamboo_menu/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = bamboo_menu/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = bamboo_menu/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = bamboo_menu/main.m; sourceTree = "<group>"; };
+		154C48AB7AB54A9090C26988 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Bold.ttf"; path = "../assets/fonts/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* bamboo_menu-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bamboo_menu-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* bamboo_menu-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bamboo_menu-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31B3CCFBAA86C80FA7C56BC5 /* Pods-bamboo_menu-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bamboo_menu-tvOS.release.xcconfig"; path = "Target Support Files/Pods-bamboo_menu-tvOS/Pods-bamboo_menu-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		49012705CDA742C9B19067AC /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Regular.ttf"; path = "../assets/fonts/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		4B380FE178FB441DB09A3CF1 /* SFUIText-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFUIText-Medium.ttf"; path = "../assets/fonts/SFUIText-Medium.ttf"; sourceTree = "<group>"; };
+		4C06675F133442FD8024127E /* libPods-bamboo_menu-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bamboo_menu-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5543648B4120FD021C103B04 /* Pods-bamboo_menu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bamboo_menu.debug.xcconfig"; path = "Target Support Files/Pods-bamboo_menu/Pods-bamboo_menu.debug.xcconfig"; sourceTree = "<group>"; };
+		61414363FE9D3DA31801AD41 /* Pods-bamboo_menu-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bamboo_menu-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-bamboo_menu-tvOSTests/Pods-bamboo_menu-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		6FDA93310873A306ECBDD286 /* Pods-bamboo_menu-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bamboo_menu-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-bamboo_menu-tvOS/Pods-bamboo_menu-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = bamboo_menu/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B2951F1D7857254A8EFDB3E /* libPods-bamboo_menu-bamboo_menuTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bamboo_menu-bamboo_menuTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		91B66A95D7051D34C4D77D9C /* libPods-bamboo_menu-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bamboo_menu-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AFBBA41B6856DC259E86070 /* libPods-bamboo_menu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bamboo_menu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A02DDFE08B46E76A253AB9CC /* Pods-bamboo_menu-bamboo_menuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bamboo_menu-bamboo_menuTests.debug.xcconfig"; path = "Target Support Files/Pods-bamboo_menu-bamboo_menuTests/Pods-bamboo_menu-bamboo_menuTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A79650F2AF2F9C4DBE39ACB4 /* Pods-bamboo_menu-bamboo_menuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bamboo_menu-bamboo_menuTests.release.xcconfig"; path = "Target Support Files/Pods-bamboo_menu-bamboo_menuTests/Pods-bamboo_menu-bamboo_menuTests.release.xcconfig"; sourceTree = "<group>"; };
+		C69598E822C71F5AF416F703 /* Pods-bamboo_menu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bamboo_menu.release.xcconfig"; path = "Target Support Files/Pods-bamboo_menu/Pods-bamboo_menu.release.xcconfig"; sourceTree = "<group>"; };
+		D93BEE31B9C1489B95E9D51F /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Bold.ttf"; path = "../assets/fonts/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -58,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E111DF3BA57CC960C37A43BC /* libPods-bamboo_menu-bamboo_menuTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32E05DE7BC5F7FD2CAFFE80F /* libPods-bamboo_menu.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				102F643E746009F888D14263 /* libPods-bamboo_menu-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69212D93DC5391A86F708442 /* libPods-bamboo_menu-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +130,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		02C8188C04344E58BF83386A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				154C48AB7AB54A9090C26988 /* Montserrat-Bold.ttf */,
+				49012705CDA742C9B19067AC /* Montserrat-Regular.ttf */,
+				D93BEE31B9C1489B95E9D51F /* OpenSans-Bold.ttf */,
+				4B380FE178FB441DB09A3CF1 /* SFUIText-Medium.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		13B07FAE1A68108700A75B9A /* bamboo_menu */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,8 +160,27 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
+				9AFBBA41B6856DC259E86070 /* libPods-bamboo_menu.a */,
+				8B2951F1D7857254A8EFDB3E /* libPods-bamboo_menu-bamboo_menuTests.a */,
+				4C06675F133442FD8024127E /* libPods-bamboo_menu-tvOS.a */,
+				91B66A95D7051D34C4D77D9C /* libPods-bamboo_menu-tvOSTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3CCBA4A6485AC8D953C91C59 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5543648B4120FD021C103B04 /* Pods-bamboo_menu.debug.xcconfig */,
+				C69598E822C71F5AF416F703 /* Pods-bamboo_menu.release.xcconfig */,
+				A02DDFE08B46E76A253AB9CC /* Pods-bamboo_menu-bamboo_menuTests.debug.xcconfig */,
+				A79650F2AF2F9C4DBE39ACB4 /* Pods-bamboo_menu-bamboo_menuTests.release.xcconfig */,
+				6FDA93310873A306ECBDD286 /* Pods-bamboo_menu-tvOS.debug.xcconfig */,
+				31B3CCFBAA86C80FA7C56BC5 /* Pods-bamboo_menu-tvOS.release.xcconfig */,
+				0A093472C22E191F7833EBC1 /* Pods-bamboo_menu-tvOSTests.debug.xcconfig */,
+				61414363FE9D3DA31801AD41 /* Pods-bamboo_menu-tvOSTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -140,6 +198,8 @@
 				00E356EF1AD99517003FC87E /* bamboo_menuTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				02C8188C04344E58BF83386A /* Resources */,
+				3CCBA4A6485AC8D953C91C59 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -164,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "bamboo_menuTests" */;
 			buildPhases = (
+				D4CD118431BCFA2CC0DF11BD /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
+				667844E73AA3B67199D22425 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,11 +244,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "bamboo_menu" */;
 			buildPhases = (
+				9C3662D9D6B9BFDC380462E9 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				FF77DC97F2A7A398D73FEC22 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,6 +265,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "bamboo_menu-tvOS" */;
 			buildPhases = (
+				1CFB26CF930AAC12D15E849F /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -220,6 +285,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "bamboo_menu-tvOSTests" */;
 			buildPhases = (
+				B0FCCF9A5D43C5AD31FA3489 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -244,17 +310,21 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 74WX9T2UK4;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = 74WX9T2UK4;
 						LastSwiftMigration = 1120;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 74WX9T2UK4;
 						ProvisioningStyle = Automatic;
 					};
 					2D02E48F1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 74WX9T2UK4;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
 					};
@@ -295,6 +365,10 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				4F8804EB48374DB7BF1E692E /* Montserrat-Bold.ttf in Resources */,
+				0444270BD4924637AA122A7B /* Montserrat-Regular.ttf in Resources */,
+				01298373C645481BB3E4E968 /* OpenSans-Bold.ttf in Resources */,
+				9D3B5B8EDA6147FFA980DBDE /* SFUIText-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +404,28 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
+		1CFB26CF930AAC12D15E849F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bamboo_menu-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -343,6 +439,90 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		667844E73AA3B67199D22425 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bamboo_menu-bamboo_menuTests/Pods-bamboo_menu-bamboo_menuTests-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bamboo_menu-bamboo_menuTests/Pods-bamboo_menu-bamboo_menuTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C3662D9D6B9BFDC380462E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bamboo_menu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0FCCF9A5D43C5AD31FA3489 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bamboo_menu-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4CD118431BCFA2CC0DF11BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bamboo_menu-bamboo_menuTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -380,6 +560,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FF77DC97F2A7A398D73FEC22 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bamboo_menu/Pods-bamboo_menu-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bamboo_menu/Pods-bamboo_menu-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -437,8 +635,11 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A02DDFE08B46E76A253AB9CC /* Pods-bamboo_menu-bamboo_menuTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				DEVELOPMENT_TEAM = 74WX9T2UK4;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -459,9 +660,12 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A79650F2AF2F9C4DBE39ACB4 /* Pods-bamboo_menu-bamboo_menuTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 74WX9T2UK4;
 				INFOPLIST_FILE = bamboo_menuTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -478,48 +682,59 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5543648B4120FD021C103B04 /* Pods-bamboo_menu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 74WX9T2UK4;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = bamboo_menu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bamboo.menu;
 				PRODUCT_NAME = bamboo_menu;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C69598E822C71F5AF416F703 /* Pods-bamboo_menu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 74WX9T2UK4;
 				INFOPLIST_FILE = bamboo_menu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bamboo.menu;
 				PRODUCT_NAME = bamboo_menu;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FDA93310873A306ECBDD286 /* Pods-bamboo_menu-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -528,6 +743,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 74WX9T2UK4;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "bamboo_menu-tvOS/Info.plist";
@@ -547,6 +763,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31B3CCFBAA86C80FA7C56BC5 /* Pods-bamboo_menu-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -556,6 +773,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 74WX9T2UK4;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "bamboo_menu-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -574,6 +792,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A093472C22E191F7833EBC1 /* Pods-bamboo_menu-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -581,6 +800,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 74WX9T2UK4;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "bamboo_menu-tvOSTests/Info.plist";
@@ -600,6 +820,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61414363FE9D3DA31801AD41 /* Pods-bamboo_menu-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -608,6 +829,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 74WX9T2UK4;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "bamboo_menu-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

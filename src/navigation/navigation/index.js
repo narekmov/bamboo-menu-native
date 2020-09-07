@@ -36,7 +36,7 @@ const HomeStack = () => {
         name="Home"
         component={HomeScreen}
         options={{
-          header: () => <Header title="BAMBOO" />,
+          header: () => <Header title="" />,
         }}
       />
     </Stack.Navigator>

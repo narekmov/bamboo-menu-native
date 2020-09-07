@@ -1,38 +1,43 @@
-import React from 'react'
-import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import { WHITE } from '../utils/colors';
-import { useSelector } from 'react-redux';
-import { REGULAR_MONTSERRAT } from '../utils/fonts';
-import { API } from '../service';
+import React from 'react';
+import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {WHITE} from '../utils/colors';
+import {useSelector} from 'react-redux';
+import {REGULAR_MONTSERRAT} from '../utils/fonts';
+import {API} from '../service';
 
-export const ProductList = ({ onItemPress, data }) => {
-  const language = useSelector(({ language }) => language.language);
+export const ProductList = ({onItemPress, data}) => {
+  const language = useSelector(({language}) => language.language);
 
-  return !!data && data.length && data.map((item) =>
-    (
+  return (
+    !!data &&
+    data.length &&
+    data.map((item) => (
       <TouchableOpacity
         style={styles.container}
         onPress={() => onItemPress(item)}
-        key={item._id}
-      >
+        key={item._id}>
         <View style={styles.imageWrapper}>
-          <Image style={[styles.image]}
-            source={{ uri: `${API}${item.image}` }}
-          />
+          <Image style={[styles.image]} source={{uri: `${API}${item.image}`}} />
         </View>
         <View style={styles.productContainer}>
           <View style={styles.nameContainer}>
-            <Text style={[styles.text, styles.productName]}>{item.name[language]}</Text>
-            <Text style={[styles.text, styles.smallText]}>{item.weight}</Text>
+            <Text style={[styles.text, styles.productName]} numberOfLines={1}>
+              {item.name[language]}
+            </Text>
+            <Text style={[styles.text, styles.smallText]} numberOfLines={1}>
+              {item.weight}
+            </Text>
           </View>
           <View style={styles.priceContainer}>
-            <Text style={[styles.productPrice, styles.text]}>{item.discount ? item.discount : item.price}</Text>
+            <Text style={[styles.productPrice, styles.text]}>
+              {item.discount ? item.discount : item.price}
+            </Text>
             <Text style={[styles.smallText, styles.text]}>AMD</Text>
           </View>
         </View>
       </TouchableOpacity>
-    )
-  )
+    ))
+  );
 };
 
 const styles = StyleSheet.create({
@@ -69,28 +74,29 @@ const styles = StyleSheet.create({
     position: 'absolute',
     bottom: 15,
     width: '100%',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
   },
   nameContainer: {
     paddingTop: 4,
-    justifyContent: 'center'
+    justifyContent: 'center',
+    flex: 1,
   },
   priceContainer: {
-    alignItems: 'flex-end'
+    alignItems: 'flex-end',
   },
   productName: {
     fontSize: 16,
     fontFamily: REGULAR_MONTSERRAT,
-    fontWeight: '600'
+    fontWeight: '600',
   },
   smallText: {
     fontSize: 12,
     fontFamily: REGULAR_MONTSERRAT,
-    fontWeight: '600'
+    fontWeight: '600',
   },
   productPrice: {
     fontSize: 28,
     fontFamily: REGULAR_MONTSERRAT,
-    fontWeight: '900'
+    fontWeight: '900',
   },
 });

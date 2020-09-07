@@ -1,7 +1,7 @@
-import React, {useEffect, useCallback} from 'react';
+import React, {useEffect, useCallback, useState} from 'react';
 import {Text, View, StyleSheet, Image} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
-import {useNavigation} from '@react-navigation/native';
+import {useNavigation, useIsFocused} from '@react-navigation/native';
 import Swiper from 'react-native-swiper';
 import {openSlideProduct} from '../actions/slides';
 import {TRANSPARENT, WHITE, BLACK_0x40} from '../utils/colors';
@@ -12,15 +12,21 @@ import {API} from '../service';
 import {mapIndex2name} from '../utils';
 
 function HomeScreen() {
+  const isFocused = useIsFocused();
   const {navigate} = useNavigation();
   const dispatchStore = useDispatch();
+  const [swiperEnabled, setSwiperEnabled] = useState(false);
   const {slides, language, token} = useSelector(
-    ({slides, language, login}) => ({
-      slides: slides.slides,
-      language: language.language,
+    ({slides: slidesState, language: languageState, login}) => ({
+      slides: slidesState.slides,
+      language: languageState.language,
       token: login.token,
     }),
   );
+
+  useEffect(() => {
+    setSwiperEnabled(isFocused);
+  }, [isFocused]);
 
   useEffect(() => {
     dispatchStore(addSlides(token));
@@ -36,7 +42,7 @@ function HomeScreen() {
 
   return (
     <View style={styles.wrapper}>
-      {slides && slides.length ? (
+      {swiperEnabled && slides && slides.length ? (
         <Swiper
           showsButtons={true}
           dotColor={BLACK_0x40}
