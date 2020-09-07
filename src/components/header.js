@@ -35,18 +35,18 @@ export const Header = ({title, back}) => {
       style={styles.linearGradient}
       start={{x: 0.0, y: 0.0}}
       end={{x: 1.0, y: 0.0}}>
-      <View style={styles.leftContent}>
-        {back && (
-          <TouchableOpacity
-            style={styles.backButtonWrapper}
-            onPress={() => goBack()}>
-            <Text style={styles.backButton}>‹</Text>
-          </TouchableOpacity>
-        )}
-      </View>
       <View style={styles.titleContent}>
         <Text style={styles.buttonText}>{title}</Text>
       </View>
+      {back ? (
+        <TouchableOpacity
+          style={styles.backButtonWrapper}
+          onPress={() => goBack()}>
+          <Text style={styles.backButton}>‹</Text>
+        </TouchableOpacity>
+      ) : (
+        <View />
+      )}
       <View style={styles.rightContent}>
         {/*ՀԱՅ / РУС / ENG*/}
         <TouchableOpacity onPress={() => setLan('hy')} style={styles.lnButton}>
@@ -93,14 +93,15 @@ const styles = StyleSheet.create({
   },
   linearGradient: {
     width: '100%',
-    height: 46,
+    height: 56,
     alignItems: 'center',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    paddingHorizontal: 20,
   },
   titleContent: {
     ...StyleSheet.absoluteFillObject,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   leftContent: {
     width: 100,
@@ -111,7 +112,6 @@ const styles = StyleSheet.create({
   buttonText: {
     fontSize: 20,
     fontWeight: 'bold',
-    textAlign: 'center',
     margin: 10,
     color: WHITE,
     backgroundColor: 'transparent',
@@ -125,15 +125,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'flex-end',
     width: 200,
+    paddingRight: 16,
   },
   active: {
     fontWeight: 'bold',
   },
   languageText: {},
   backButtonWrapper: {
-    height: 50,
+    paddingLeft: 16,
+    height: '100%',
     width: 100,
-    borderColor: 'white',
+    justifyContent: 'center',
   },
   backButton: {
     fontSize: 50,
